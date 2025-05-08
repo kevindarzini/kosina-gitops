@@ -5,6 +5,7 @@ metadata:
   namespase: kosina
 spec:
   interval: 30s
+  targetNamespace: kosina
   chart:
     spec:
       chart:.
