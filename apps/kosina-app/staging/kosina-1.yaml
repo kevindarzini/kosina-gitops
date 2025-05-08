@@ -7,7 +7,7 @@ spec:
   interval: 30s
   chart:
     spec:
-      chart:./helm/kosina
+      chart:.
     sourceRef:
       kind: GitRepository
       name: kosina-app
