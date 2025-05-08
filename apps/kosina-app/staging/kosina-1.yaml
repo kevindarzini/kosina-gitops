@@ -11,7 +11,7 @@ spec:
     sourceRef:
       kind: GitRepository
       name: kosina-app
-      namespace: kosina
+      namespace: flux-system
     interval: 30s
 ---
 apiVersion: source.toolkit.fluxcd.io/v1
