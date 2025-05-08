@@ -18,7 +18,7 @@ apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
   name: kosina-1
-  namespace: kosina
+  namespace: flux-system
 spec:
   interval: 1m0s
   url: https://github.com/kevindarzini/kosina-app
