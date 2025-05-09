@@ -1,15 +1,3 @@
----
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: GitRepository
-metadata:
-  name: kosina-apps
-  namespace: kosina
-spec:
-  interval: 1m0s
-  url: https://github.com/kevindarzini/kosina-app
-  ref:
-    branch: master
----
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
