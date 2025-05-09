@@ -1,0 +1,14 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: staging-release
+  namespace: kosina
+spec:
+  chart:
+    spec:
+      chart: .
+      reconcileStrategy: ChartVersion
+      sourceRef:
+        kind: GitRepository
+        name: kosina-apps
+  interval: 1m0s
