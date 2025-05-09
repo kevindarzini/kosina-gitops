@@ -1,8 +1,20 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: kosina-1
+  namespace: kosina
+spec:
+  interval: 1m0s
+  url: https://github.com/kevindarzini/kosina-app
+  ref:
+    branch: master
+---
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: kosina-1-onboarding
-  namespase: flux-system
+  namespase: kosina
 spec:
   interval: 30s
   targetNamespace: kosina
@@ -14,15 +26,3 @@ spec:
       name: kosina-app
       namespace: flux-system
     interval: 30s
----
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: GitRepository
-metadata:
-  name: kosina-1
-  namespace: flux-system
-spec:
-  interval: 1m0s
-  url: https://github.com/kevindarzini/kosina-app
-  ref:
-    branch: master
-
