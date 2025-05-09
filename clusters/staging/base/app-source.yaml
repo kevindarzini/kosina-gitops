@@ -11,3 +11,14 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: kosina-gitops
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: master
+  url: https://github.com/kevindarzini/kosina-gitops
