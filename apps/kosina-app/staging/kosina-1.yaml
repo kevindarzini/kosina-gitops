@@ -2,7 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: kosina-app
+  name: kosina-apps
   namespace: kosina
 spec:
   interval: 1m0s
@@ -23,5 +23,5 @@ spec:
       chart:.
     sourceRef:
       kind: GitRepository
-      name: kosina-app
+      name: kosina-apps
     interval: 30s
