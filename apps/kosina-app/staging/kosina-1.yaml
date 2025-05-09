@@ -24,5 +24,4 @@ spec:
     sourceRef:
       kind: GitRepository
       name: kosina-app
-      namespace: flux-system
     interval: 30s
