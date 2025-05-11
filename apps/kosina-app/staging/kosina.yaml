@@ -11,15 +11,19 @@ spec:
       sourceRef:
         kind: GitRepository
         name: kosina-apps
+    interval: 1m0s
+    url: https://github.com/kevindarzini/kosina-apps
+    ref:
+    branch: master        
   interval: 1m0s
----
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: GitRepository
-metadata:
-  name: kosina-apps
-  namespace: kosina
-spec:
-  interval: 1m0s
-  url: https://github.com/kevindarzini/kosina-apps
-  ref:
-    branch: master
+# ---
+# apiVersion: source.toolkit.fluxcd.io/v1
+# kind: GitRepository
+# metadata:
+#   name: kosina-apps
+#   namespace: kosina
+# spec:
+#   interval: 1m0s
+#   url: https://github.com/kevindarzini/kosina-apps
+#   ref:
+#     branch: master
